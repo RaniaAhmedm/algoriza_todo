@@ -1,7 +1,7 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 
-import 'cubit.dart';
+import '../core/cubit/cubit.dart';
 
 Widget buildTaskItem(Map model , context)=> Dismissible(
   key: Key(model['id'].toString()),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todoapp/states.dart';
+import 'package:todoapp/core/cubit/states.dart';
 
 import 'component.dart';
-import 'cubit.dart';
+import '../core/cubit/cubit.dart';
 
-class DoneScreen extends StatelessWidget {
-  const DoneScreen({Key? key}) : super(key: key);
+class ArchivedScreen extends StatelessWidget {
+  const ArchivedScreen({Key? key}) : super(key: key);
 
 
   @override
@@ -14,8 +14,8 @@ class DoneScreen extends StatelessWidget {
     return   BlocConsumer<AppCubit,AppStates>(
         listener: (context,state){},
         builder: (context,state){
-          var tasks = AppCubit.get(context).doneTasks;
-          return  tasksBuilder(tasks: tasks);
+          var tasks = AppCubit.get(context).archivedTasks;
+          return tasksBuilder(tasks: tasks);
 
         }
 

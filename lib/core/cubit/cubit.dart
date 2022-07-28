@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:todoapp/states.dart';
+import 'package:todoapp/core/cubit/states.dart';
 
-import 'archivedtasks.dart';
-import 'donetasks.dart';
-import 'newtasks.dart';
+import '../../presentaion/archivedtasks.dart';
+import '../../presentaion/donetasks.dart';
+import '../../presentaion/newtasks.dart';
 
 class AppCubit extends Cubit<AppStates> {
   AppCubit() : super(AppInitialState());

@@ -2,19 +2,14 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:todoapp/cubit.dart';
-
-import 'package:todoapp/states.dart';
-
+import 'package:todoapp/core/cubit/cubit.dart';
+import 'package:todoapp/core/cubit/states.dart';
 
 class HomeLayout extends StatelessWidget
 {
 
   var scaffoldKey = GlobalKey<ScaffoldState>();
   var formKey = GlobalKey<FormState>();
-
-
-
   var titleController = TextEditingController();
   var timeController = TextEditingController();
   var dateController = TextEditingController();
